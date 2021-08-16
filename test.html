@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            this is a test form
+        </title>
+        <script type="application/javascript">
+        
+            function fun1(){
+                var uname = document.getElementById("name");
+                var uemail = document.getElementById("email");
+
+                if( uname.value== ""){
+                    alert("fill in the name please")
+                    uname.focus();
+                    return false
+                }
+
+                if(uemail.value == ""){
+                    alert("fill in the email please")
+                    uemail.focus()
+                    return false
+                }
+alert("it is filled")
+                return true;
+            }
+
+
+
+        </script>
+
+        <body>
+            <h1>enter your details</h1>
+            <form id="form1" onsubmit="return fun1()">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <br>
+                <br>
+                <label for="email"> Email ID</label>
+                <input type="email" id="email" name="email">
+                <br>
+                <br>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+
+            </form>
+
+
+
+        </body>
+
+    </head>
+</html>

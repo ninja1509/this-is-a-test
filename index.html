@@ -1,19 +1,57 @@
-<!DOCTYPE html>
-  <html lang="">
+<html>
     <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Matter JS BoilerPlate</title>
-      <style> body {padding: 0; margin: 0;} </style>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
-      <script src="p5.play.js"></script>
-      <script src="bob.js"></script>
-      <script src="roof.js"></script>
-      <script src="rope.js"></script>
-      <script src="sketch.js"></script>
-
+     <!-- connectiing it to the javascript file -->
+    <script src="script.js"></script>
+    <!-- linking to an external stylesheet -->
+    <link rel="stylesheet" href="style.css">
     </head>
+
+    <!-- main body starts here -->
     <body>
+        
+        <div class="mainDiv">
+            <h1>Simple Interest Calculator</h1>
+
+            <!-- creating a div class to make it easier to style and segregate elements -->
+            <div class="card">
+                <!-- followed by all sort of labels and inputs required -->
+                <label for="Amount">Amount</label>
+                <input type="number"  id="principal"><br>
+            
+                <label for="Interest Rate">Interest Rate</label>
+                <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate()"> 
+                <span id="rate_val" > 10.25% </span> <br>
+
+                <label for="No. of Years">No. of Years</label>
+                <select id="years"> 
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select> <br>
+               
+                <!-- creating a button to call compute funtion from the js file to perform operation -->
+                <button onclick="compute()">Compute Interest</button><br>
+                <span id="result">
+                
+                </span><br>
+            </div>
+
+
+<!-- here is the footer of the page -->
+<footer>
+        &#169; This Calculator belongs to samaah just to get a rich vibe
+</footer>
+   </div>     
     </body>
-  </html>
+    
+    <!-- end of body -->
+
+</html>
+<!-- End of HTML -->

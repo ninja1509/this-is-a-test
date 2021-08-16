@@ -1,0 +1,61 @@
+/* giving design to everything */
+
+*{
+    /* border: solid; */
+    margin-bottom: 15px;
+   
+    
+}
+/* 
+giving design to body */
+body {
+    background-color:black;
+    font-family:arial;
+    color:white;
+}
+
+/* giving design to maidDiv class and some specific elements */
+.mainDiv{
+    background: #ffffff;
+    color: black;
+    width:480px;
+    padding:20px;
+    border-radius: 25px;
+    
+}
+
+
+.mainDiv h1{
+    color:grey;
+    font-family:verdana;
+}
+
+
+.card{
+    margin: auto;
+    /* position:relative; */
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card label {
+    
+    margin-right: 25px; 
+    
+}
+
+/* specifically to ids */
+#principal{
+    margin-left: 40px;
+    
+}
+
+#years{
+    margin-left: 10px;
+   
+}
+
+.highl{
+    background-color: yellow;
+}
